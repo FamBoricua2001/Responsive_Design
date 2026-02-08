@@ -38,6 +38,17 @@
 	.menu li:hover {
 		background-color: #0099cc;
 	}
+	.menu li ul {
+		display: none;
+		list-style-type: none;
+		padding-left: 20px;
+	}
+	.menu li:hover > ul {
+		display: block;
+	}
+	.menu li ul li {
+		margin-top: 5px;
+	}
 	.aside {
 		background-color: #33b5e5;
 		padding: 15px;
@@ -86,9 +97,12 @@
 				<li>Work Experience</li>
 				<li>Education</li>
 				<li>Certifications and Licences</li>
-				<li>Skills</li>
-					<li>Technical Skills</li>
-					<li>Soft Skills</li>
+				<li>Skills
+					<ul>
+						<li>Technical Skills</li>
+						<li>Soft Skills</li>
+					</ul>
+				</li>
 				<li>Affiliations</li>
 				<li>Languages</li>
 				<li>Awards and Recognitions</li>
