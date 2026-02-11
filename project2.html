@@ -18,6 +18,11 @@
 	html {
 		font-family: "Lucida Sans", sans-serif;
 	}
+
+	/* Base page background (initial color) on small screens (minimized window) */
+	body {
+		background-color: #f8f8f8;
+	}
 	.header {
 		background-color: #003399;
 		color: #ffffff;
@@ -84,6 +89,13 @@
 			width: 100%;
 		}
 	}
+
+	/* Desktop breakpoint: background changes color as screen width increases (maximized window). */
+	@media only screen and (min-width: 759px) {
+		body {
+			background-color: #c5ebfc;
+		}
+	}
 	</style>
 </head>
 
@@ -119,8 +131,8 @@
 				<h2></h2>
 				<p></p>
 				<h2>High School</h2>
-				<p>Woodbridge Senior High School
-					Woodbridge, VA</p>
+				<p>Woodbridge Senior High School</p>
+				<p>Woodbridge, VA</p>
 
 			</div>
 		</div>
